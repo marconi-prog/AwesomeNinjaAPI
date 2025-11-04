@@ -12,4 +12,8 @@ public class NinjaController {
     public String boasvindas(){
        return "essa e minha primeira rota";
     }
+    @GetMapping("/hh")
+    public String hh(){
+        return "hh";
+    }
 }
