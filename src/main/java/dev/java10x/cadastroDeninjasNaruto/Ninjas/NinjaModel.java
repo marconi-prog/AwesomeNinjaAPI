@@ -18,13 +18,19 @@ public class NinjaModel {
     //criar o id e coloca um valor automaticamente com numeros
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column (name = "id")
     private long id;
 
+    @Column(name = "nome")
     private String nome;
 
     @Column(unique = true)
     private String email;
 
+    @Column(name = "img")
+    private String imgurl;
+
+    @Column (name = "idade")
     private int idade;
 
     //varios para um
