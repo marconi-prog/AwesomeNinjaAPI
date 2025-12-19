@@ -10,7 +10,6 @@ Este projeto está **finalizado** e demonstra boas práticas de arquitetura back
 
 <!--lint disable awesome-toc-->
 
-<img src="mascote.png" align="right" width="180">
 
 ## Conteúdo
 
@@ -21,6 +20,8 @@ Este projeto está **finalizado** e demonstra boas práticas de arquitetura back
 * [Endpoints principais](#endpoints-principais)
 * [Como executar o projeto](#como-executar-o-projeto)
 * [Próximos passos](#próximos-passos)
+
+<img src="mascote.png" align="right" width="130">
 
 ## Visão geral do projeto
 
