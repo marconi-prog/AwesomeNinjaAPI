@@ -3,7 +3,7 @@
 
 > Uma lista organizada e prática de exemplos e recursos do projeto **Ninja API**, uma aplicação backend desenvolvida em **Spring Boot**, focada em cadastro e gerenciamento de ninjas.
 
-Este projeto está **finalizado** e demonstra boas práticas de arquitetura backend usando **Java + Spring Boot + JPA**, incluindo documentação automática com **Swagger**, containerização com **Docker** e configuração pronta para **Docker Compose**.
+> Este projeto está **finalizado** e demonstra boas práticas de arquitetura backend usando **Java + Spring Boot + JPA**, incluindo documentação automática com **Swagger**, containerização com **Docker** e configuração pronta para **Docker Compose**.
 
 > **Nota**
 > Este projeto é voltado para fins educacionais, aprendizado e portfólio. Não é recomendado para uso direto em produção sem adaptações de segurança e escalabilidade.
