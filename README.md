@@ -1,6 +1,7 @@
-# Awesome Ninja API [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Ninja API 
 
-![logo](logo-ninja.jpg)
+<img src="imagens/mascote.png" align="right" width="220">
+
 
 > Uma lista organizada e prática de exemplos e recursos do projeto **Ninja API**, uma aplicação backend desenvolvida em **Spring Boot**, focada em cadastro e gerenciamento de ninjas.
 
@@ -164,5 +165,19 @@ http://localhost:8080/swagger-ui.html
 
 ---
 
+##  Comunidade e Suporte
+
+Junte-se às nossas discussões da comunidade no GitHub para compartilhar ideias, fazer perguntas ou sugerir melhorias. Vamos construir algo incrível juntos!
+
+[![Abrir Issues](https://img.shields.io/badge/Abrir%20Issues-blue?style=for-the-badge&logo=github)](https://github.com/marconi-prog/AwesomeNinjaAPI/issues)
+
+Use o espaço de *issues* para relatar bugs, sugerir melhorias ou tirar dúvidas sobre o projeto 💬
+
+---
 💡 Projeto ideal para estudos, entrevistas e portfólio backend Java.
+
+
+<div align="center">
+  <p>Feito com ❤️ por <a href="https://github.com/marconi-prog">Marconi Farias</a></p>
+</div>
 
