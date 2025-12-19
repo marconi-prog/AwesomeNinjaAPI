@@ -10,7 +10,7 @@ Este projeto está **finalizado** e demonstra boas práticas de arquitetura back
 
 <!--lint disable awesome-toc-->
 
-<img src="mascote.png" align="right" width="200">
+<img src="mascote.png" align="right" width="180">
 
 ## Conteúdo
 
