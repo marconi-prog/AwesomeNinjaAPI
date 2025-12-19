@@ -1,68 +1,168 @@
-🥷 Cadastro de Ninjas — Spring Boot
+# Awesome Ninja API [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Sistema desenvolvido em Spring Boot para realizar o cadastro e gerenciamento de ninjas.
-Inclui documentação via Swagger, testes via Postman e uma API REST completa para CRUD.
+![logo](logo-ninja.jpg)
 
-🚀 Tecnologias Utilizadas
+> Uma lista organizada e prática de exemplos e recursos do projeto **Ninja API**, uma aplicação backend desenvolvida em **Spring Boot**, focada em cadastro e gerenciamento de ninjas.
 
-Java 17+
+Este projeto está **finalizado** e demonstra boas práticas de arquitetura backend usando **Java + Spring Boot + JPA**, incluindo documentação automática com **Swagger**, containerização com **Docker** e configuração pronta para **Docker Compose**.
 
-Spring Boot (Web, Data JPA, Validation)
+> **Nota**
+> Este projeto é voltado para fins educacionais, aprendizado e portfólio. Não é recomendado para uso direto em produção sem adaptações de segurança e escalabilidade.
 
-Springdoc OpenAPI (Swagger UI)
+<!--lint disable awesome-toc-->
 
-MySQL ou PostgreSQL
+## Conteúdo
 
-Maven
+* [Visão geral do projeto](#visão-geral-do-projeto)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Estrutura do projeto](#estrutura-do-projeto)
+* [Funcionalidades](#funcionalidades)
+* [Endpoints principais](#endpoints-principais)
+* [Como executar o projeto](#como-executar-o-projeto)
+* [Próximos passos](#próximos-passos)
 
-Postman (para testes)
+## Visão geral do projeto
 
-🗂️ Funcionalidades
+A **Ninja API** é uma API RESTful desenvolvida em Java utilizando Spring Boot. O objetivo do projeto é permitir o cadastro, listagem, atualização, busca e remoção de ninjas, aplicando boas práticas como separação de camadas (Controller, Service, Repository) e uso de JPA para persistência de dados.
 
-Cadastrar ninjas
+## Tecnologias utilizadas
 
-Listar todos os ninjas
+* **Java 17+**
+* **Spring Boot**
+* **Spring Web**
+* **Spring Data JPA**
+* **Hibernate**
+* **Swagger / OpenAPI 3** (documentação da API)
+* **Docker**
+* **Docker Compose**
+* **Banco de dados**: MySQL / PostgreSQL
+* **Maven**
 
-Buscar ninja por ID
+## Estrutura do projeto
 
-Atualizar ninja
+```
+src/main/java
+ └── com/seuprojeto/naruto
+     ├── ninja
+     │   ├── controller
+     │   │   └── NinjaController.java
+     │   ├── service
+     │   │   └── NinjaService.java
+     │   ├── repository
+     │   │   └── NinjaRepository.java
+     │   └── model
+     │       └── NinjaModel.java
+     │
+     ├── missao
+     │   ├── controller
+     │   │   └── MissaoController.java
+     │   ├── service
+     │   │   └── MissaoService.java
+     │   ├── repository
+     │   │   └── MissaoRepository.java
+     │   └── model
+     │       └── MissaoModel.java
+     │
+     └── config
+         └── SwaggerConfig.java
 
-Excluir ninja
-
-Documentação automática da API (Swagger)
-
-Testes via Postman
-
-📘 Estrutura do Ninja (Modelo)
-
-Cada ninja contém:
-
-id (gerado automaticamente)
-
-nome
-
-idade
-
-rank (Genin, Chunin, Jonin…)
-
-aldeia
-
-habilidadeEspecial
-
-status (Ativo, Em Missão, Desaparecido)
-
-# Swagger OpenAPI
-springdoc.swagger-ui.path=/swagger
-
-Crie uma Collection chamada Cadastro de Ninjas
+```
 
 
-🤝 Contribuindo
+## Funcionalidades
+```
+* ✅ Cadastrar ninjas
 
-Contribuições são sempre bem-vindas!
+* 📋 Listar todos os ninjas
 
-Abra uma issue
+* 🔍 Buscar ninja por ID
 
-Envie um pull request
+* ✏️ Atualizar informações do ninja
 
-Sugestões e melhorias são aceitas
+* ❌ Deletar ninja
+
+* 🎯 Cadastrar missões
+
+* 📋 Listar missões
+
+* 🔗 Vincular missões a ninjas
+
+* ❌ Remover missões
+
+* 📄 Documentação automática da API com Swagger
+
+* 🐳 Aplicação totalmente containerizada com Docker
+
+* 🔄 Orquestração de serviços com Docker Compose
+```
+
+## Endpoints principais
+
+| Método | Endpoint      | Descrição                |
+| ------ | ------------- | ------------------------ |
+| Método | Endpoint      | Descrição                |
+| ------ | ---------     | -----------              |
+| GET    | /ninjas       | Lista todos os ninjas    |
+| GET    | /ninjas/{id}  | Busca ninja por ID       |
+| POST   | /ninjas       | Cadastra um novo ninja   |
+| PUT    | /ninjas/{id}  | Atualiza um ninja        |
+| DELETE | /ninjas/{id}  | Remove um ninja          |
+| GET    | /missoes      | Lista todas as missões   |
+| POST   | /missoes      | Cadastra uma nova missão |
+| PUT    | /missoes/{id} | Atualiza uma missão      |
+| DELETE | /missoes/{id} | Remove uma missão        |
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+* Docker
+* Docker Compose
+
+### Executando com Docker Compose
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/ninja-api.git
+
+# Entrar no projeto
+cd ninja-api
+
+# Subir aplicação + banco
+docker compose up -d
+```
+
+A aplicação ficará disponível em:
+
+```
+http://localhost:8080
+```
+
+### Swagger (Documentação da API)
+
+Após subir o projeto, a documentação interativa estará disponível em:
+
+```
+http://localhost:8080/swagger-ui.html
+```
+
+## Próximos passos
+
+* 🚀 Projeto finalizado e pronto para demonstração
+
+* 📌 Ideal para portfólio, entrevistas e estudos avançados
+
+* 🔐 Implementar autenticação com Spring Security
+
+* 📦 Criar DTOs e Mappers
+
+* 🧪 Adicionar testes unitários
+
+* 🐳 Dockerizar a aplicação
+
+* 📄 Criar documentação com Swagger/OpenAPI
+
+---
+
+💡 Projeto ideal para estudos, entrevistas e portfólio backend Java.
+

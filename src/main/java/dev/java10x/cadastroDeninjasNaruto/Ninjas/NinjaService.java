@@ -18,7 +18,7 @@ public class NinjaService {
     public List<NinjaModel> listarNinjas(){
         return ninjaRepository.findAll();
     }
-    //Listar todos os ninjas pelo id
+    //Listar todos os ninjas por ID
     public Optional<NinjaModel> todosID(Long id){
         return ninjaRepository.findById(id);
     }
