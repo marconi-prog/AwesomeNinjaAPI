@@ -28,12 +28,12 @@ public class NinjaController {
 
     // Mostrar ninjas (Read)
     @GetMapping("/todos")
-    public List<NinjaModel> listarNinjas(){
+    public List<NinjaDTO> listarNinjas(){
         return ninjaService.listarNinjas();
     }
     // Mostrar ninjas por id (Read)
     @GetMapping("/todosID/{id}")
-    public NinjaModel buscarPorId(@PathVariable Long id){
+    public NinjaDTO buscarPorId(@PathVariable Long id){
         return ninjaService.buscarPorId(id);
     }
 

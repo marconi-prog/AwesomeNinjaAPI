@@ -14,4 +14,17 @@ public class NinjaMapper {
 
         return ninjaModel;
     }
+
+    public NinjaDTO map(NinjaModel ninjaModel) {
+        NinjaDTO ninjaDTO = new NinjaDTO();
+
+        ninjaDTO.setId(ninjaModel.getId());
+        ninjaDTO.setNome(ninjaModel.getNome());
+        ninjaDTO.setEmail(ninjaModel.getEmail());
+        ninjaDTO.setImgurl(ninjaModel.getImgurl());
+        ninjaDTO.setIdade(ninjaModel.getIdade());
+        ninjaDTO.setMissoes(ninjaModel.getMissoes());
+
+        return ninjaDTO;
+    }
 }
