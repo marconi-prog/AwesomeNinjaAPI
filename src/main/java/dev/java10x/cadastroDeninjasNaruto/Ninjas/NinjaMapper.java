@@ -30,4 +30,12 @@ public class NinjaMapper {
 
         return ninjaDTO;
     }
+    public void update(NinjaModel ninja, NinjaDTO dto) {
+        ninja.setNome(dto.getNome());
+        ninja.setEmail(dto.getEmail());
+        ninja.setImgurl(dto.getImgurl());
+        ninja.setIdade(dto.getIdade());
+        ninja.setMissoes(dto.getMissoes());
+    }
+
 }

@@ -38,4 +38,11 @@ public class NinjaService {
             throw new IllegalArgumentException("Erro interno ao criar ninja");
         }
     }
+    public NinjaDTO alterarNinjasPorId(Long id, NinjaDTO ninjaDTO){
+        NinjaModel ninjaModel = ninjaRepository.findById(id).orElseThrow(() -> new RuntimeException("Ninja nao encontratado com ID: " + id));
+
+        ninjaMapper.update(ninjaModel, ninjaDTO);
+
+        return ninjaMapper.map(ninjaRepository.save(ninjaModel));
+    }
 }
