@@ -18,19 +18,20 @@ public class NinjaService {
         this.ninjaMapper = ninjaMapper;
     }
 
-    //Listar todos os ninjas
+    // Listar todos os ninjas
     public List<NinjaDTO> listarNinjas(){
         return ninjaRepository.findAll().stream().map(ninjaMapper::map).toList();
     }
-    //Listar todos os ninjas por ID
+    // Listar todos os ninjas por ID
     public NinjaDTO buscarPorId(Long id) {
        return ninjaRepository.findById(id).map(ninjaMapper::map).orElseThrow(() -> new RuntimeException("Ninja nao encontrado com ID: " + id));
     }
-    //Deletar ninjas por id
+    // Deletar ninjas por id
     public void deletarNinjaPorId(Long id){
         ninjaRepository.findById(id).orElseThrow(() -> new RuntimeException("Ninja nao encontrado com ID: " + id));
         ninjaRepository.deleteById(id);
     }
+    // Criar ninjas
     public NinjaDTO criarNinja(NinjaDTO ninjaDTO){
         try {
             return ninjaMapper.map(ninjaRepository.save(ninjaMapper.map(ninjaDTO)));
@@ -38,6 +39,7 @@ public class NinjaService {
             throw new IllegalArgumentException("Erro interno ao criar ninja");
         }
     }
+    // Alterar ninjas por id, ele tem q alterar todos os itens ele nao e patch e um put
     public NinjaDTO alterarNinjasPorId(Long id, NinjaDTO ninjaDTO){
         NinjaModel ninjaModel = ninjaRepository.findById(id).orElseThrow(() -> new RuntimeException("Ninja nao encontratado com ID: " + id));
 
