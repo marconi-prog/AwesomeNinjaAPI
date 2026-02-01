@@ -1,5 +1,8 @@
 package dev.java10x.cadastroDeninjasNaruto.Ninjas;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class NinjaMapper {
 
     public NinjaModel map(NinjaDTO ninjaDTO) {

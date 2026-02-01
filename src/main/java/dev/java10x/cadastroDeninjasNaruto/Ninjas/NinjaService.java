@@ -1,6 +1,7 @@
 package dev.java10x.cadastroDeninjasNaruto.Ninjas;
 
 import jakarta.persistence.Id;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -29,5 +30,12 @@ public class NinjaService {
     public void deletarNinjaPorId(Long id){
         ninjaRepository.findById(id).orElseThrow(() -> new RuntimeException("Ninja nao encontrado com ID: " + id));
         ninjaRepository.deleteById(id);
+    }
+    public NinjaDTO criarNinja(NinjaDTO ninjaDTO){
+        try {
+            return ninjaMapper.map(ninjaRepository.save(ninjaMapper.map(ninjaDTO)));
+        } catch (DataIntegrityViolationException e) {
+            throw new IllegalArgumentException("Erro interno ao criar ninja");
+        }
     }
 }
