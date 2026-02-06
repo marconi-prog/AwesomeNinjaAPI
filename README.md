@@ -1,13 +1,9 @@
 # Awesome Ninja API 
 
-
 > Uma lista organizada e prática de exemplos e recursos do projeto **Ninja API**, uma aplicação backend desenvolvida em **Spring Boot**, focada em cadastro e gerenciamento de ninjas.
-
 > Este projeto está **finalizado** e demonstra boas práticas de arquitetura backend usando **Java + Spring Boot + JPA**, incluindo documentação automática com **Swagger**, containerização com **Docker** e configuração pronta para **Docker Compose**.
-
 > **Nota**
 > Este projeto é voltado para fins educacionais, aprendizado e portfólio. Não é recomendado para uso direto em produção sem adaptações de segurança e escalabilidade.
-
 <!--lint disable awesome-toc-->
 
 
@@ -67,34 +63,22 @@ src/main/java
      │
      └── config
          └── SwaggerConfig.java
-
 ```
 
 
 ## Funcionalidades
 ```
 * ✅ Cadastrar ninjas
-
 * 📋 Listar todos os ninjas
-
 * 🔍 Buscar ninja por ID
-
 * ✏️ Atualizar informações do ninja
-
 * ❌ Deletar ninja
-
 * 🎯 Cadastrar missões
-
 * 📋 Listar missões
-
 * 🔗 Vincular missões a ninjas
-
 * ❌ Remover missões
-
 * 📄 Documentação automática da API com Swagger
-
 * 🐳 Aplicação totalmente containerizada com Docker
-
 * 🔄 Orquestração de serviços com Docker Compose
 ```
 
@@ -175,10 +159,8 @@ Junte-se às nossas discussões da comunidade no GitHub para compartilhar ideias
 Use o espaço de *issues* para relatar bugs, sugerir melhorias ou tirar dúvidas sobre o projeto 💬
 
 ---
-💡 Projeto ideal para estudos, entrevistas e portfólio backend Java.
 
 
 <div align="center">
   <p>Feito com ❤️ por <a href="https://github.com/marconi-prog">Marconi Farias</a></p>
 </div>
-
