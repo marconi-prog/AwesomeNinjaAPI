@@ -159,7 +159,6 @@ Junte-se às nossas discussões da comunidade no GitHub para compartilhar ideias
 Use o espaço de *issues* para relatar bugs, sugerir melhorias ou tirar dúvidas sobre o projeto 💬
 
 ---
-💡 Projeto ideal para estudos, entrevistas e portfólio backend Java.
 
 
 <div align="center">
