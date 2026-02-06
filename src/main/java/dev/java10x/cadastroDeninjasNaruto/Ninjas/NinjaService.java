@@ -47,4 +47,16 @@ public class NinjaService {
 
         return ninjaMapper.map(ninjaRepository.save(ninjaModel));
     }
+    public NinjaDTO atualizarParcial(Long id, NinjaDTO ninjaDTO) {
+
+        NinjaModel ninja = ninjaRepository.findById(id)
+                .orElseThrow(() ->
+                        new RuntimeException("Ninja não encontrado com ID: " + id)
+                );
+
+        ninjaMapper.updateParcial(ninja, ninjaDTO);
+
+        return ninjaMapper.map(ninjaRepository.save(ninja));
+    }
+
 }

@@ -37,5 +37,4 @@ public class NinjaMapper {
         ninja.setIdade(dto.getIdade());
         ninja.setMissoes(dto.getMissoes());
     }
-
 }
